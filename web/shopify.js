@@ -20,6 +20,7 @@ const shopify = shopifyApp({
   api: {
     apiVersion: LATEST_API_VERSION,
     restResources,
+    isEmbeddedApp:false,
     future: {
       customerAddressDefaultFix: true,
       lineItemBilling: true,

@@ -1,3 +1,29 @@
-# This file stores configurations for your Shopify app.
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
-scopes = "write_products"
+client_id = "b2aff7f014b91710ffb7306642a8a4c2"
+name = "ship-swap"
+handle = "ship-swap"
+application_url = "https://investments-breeds-auditor-receive.trycloudflare.com"
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "nishant-k-tiwary.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_products,write_orders,write_products"
+
+[auth]
+redirect_urls = [
+  "https://investments-breeds-auditor-receive.trycloudflare.com/auth/callback",
+  "https://investments-breeds-auditor-receive.trycloudflare.com/auth/shopify/callback",
+  "https://investments-breeds-auditor-receive.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-10"
+
+[pos]
+embedded = false
